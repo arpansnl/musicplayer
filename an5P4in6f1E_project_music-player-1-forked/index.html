@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>music player</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+	<script src="https://kit.fontawesome.com/61eba46251.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/gh/sh20raj/AudiPlay/audiplay.min.js"></script>
+</head>
+<body>
+    <!-- nav bar starts-->
+    <header id="navbar" >
+    	<div id="navbar-1">
+     <img id="ninja-logo" src="logo.png" alt="">
+      <a href="#">Favourites</a>
+    
+      </div>
+  	<div id="navbar-2">
+  		
+      <i id="magnifyglass" class="fa-solid fa-magnifying-glass"></i>
+  		<input type="text" placeholder="Search ">
+		<i class="fa-solid fa-microphone"></i>
+		<i class="fa-solid fa-bell" id="bell"></i>
+		<i class="fa-regular fa-user" id="profile"></i>
+	</div>
+    <div id="navbar-2-dup"><div i class="btn-group dropstart">
+  <button id="ss" type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    <i id="dots" class="fa-solid fa-ellipsis"></i>
+  </button>
+  <ul class="dropdown-menu">
+    <!-- Dropdown menu links -->
+    <li><a class="dropdown-item" href="#"><i id="magnifyglass" class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Search ">Search</a></li>
+    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-microphone"></i> voice search</a></li>
+    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-bell" id="bell"></i> Notifications</a></li>
+    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-list"></i></i> Add to favourites</a></li>
+    <li><a class="dropdown-item" href="#"><i class="fa-regular fa-user" id="profile"></i> profile</a></li>
+  </ul>
+</div></div>
+</header>
+
+<!-- main section starts here -->
+<div id="whole">
+<main>
+    <!-- carousel starts-->
+    <div id="main-part" class="container">
+        <div class="carousel-class" class="container">
+	<div class="carousel">
+		<img src="pathaan.jpg" alt="">
+	</div>
+	<div class="carousel">
+		<img src="tjmk.jpg" alt="">
+	</div>
+	<div class="carousel"><img src="bhediya.jpeg" alt=""></div>
+        </div>
+<!-- latest releases starts-->
+<h4>Latest Releases</h4>
+<div id="releases-container">
+   <div class="each-release-div">
+    <div class="releases-image-container">
+     <img src="new2.png" >
+     <div class="releases-details">
+                     <i class="fa-solid fa-play"></i>
+                    </div>
+                </div>
+     <div  class="details1">
+             <div id="side-button2" class="btn-group dropstart">
+  <button id="ss" type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    <i id="dots" class="fa-solid fa-ellipsis"></i>
+  </button>
+  <ul class="dropdown-menu">
+    <!-- Dropdown menu links -->
+    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-play"></i> Play Now</a></li>
+    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-plus"></i>Add to Queue</a></li>
+    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-list"></i></i>Add to favourites</a></li>
+    <li><a class="dropdown-item" href="#"><i class="fa-sharp fa-solid fa-circle-info"></i> Get info</a></li>
+  </ul>
+</div>
+         <span>Pathaan <br>
+         3-3-23</span>
+         
+
+         
+    </div>
+    <div class="releases-image-container">
+     <img src="s8.jpg" alt="">
+     <div class="releases-details">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                </div>
+     <div  class="details1">
+        <div id="side-button2" class="btn-group dropstart">
+  <button id="ss" type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    <i id="dots" class="fa-solid fa-ellipsis"></i>
+  </button>
+  <ul class="dropdown-menu">
+    <!-- Dropdown menu links -->
+    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-play"></i> Play Now</a></li>
+    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-plus"></i>Add to Queue</a></li>
+    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-list"></i></i>Add to favourites</a></li>
+    <li><a class="dropdown-item" href="#"><i class="fa-sharp fa-solid fa-circle-info"></i> Get info</a></li>
+  </ul>
+</div>
+        
+         <span>Pathaan <br>
+         3-3-23</span>
+         
+
+         
+    
+     </div>
+
+</div>
+
+<div id="releases-container">
+   <div class="each-release-div">
+    <div class="releases-image-container">
+     <img src="new2.png" alt="">
+     <div class="releases-details">
+                       <i class="fa-solid fa-play"></i>
+                    </div>
+                </div>
+     <div  class="details1">
+             <div id="side-button2" class="btn-group dropstart">
+  <button id="ss" type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    <i id="dots" class="fa-solid fa-ellipsis"></i>
+  </button>
+  <ul class="dropdown-menu">
+    <!-- Dropdown menu links -->
+    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-play"></i> Play Now</a></li>
+    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-plus"></i>Add to Queue</a></li>
+    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-list"></i></i>Add to favourites</a></li>
+    <li><a class="dropdown-item" href="#"><i class="fa-sharp fa-solid fa-circle-info"></i> Get info</a></li>
+  </ul>
+</div>
+         <span>Pathaan <br>
+         3-3-23</span>
+        
+    </div>
+    <div class="releases-image-container">
+     <img src="s8.jpg" alt="">
+     <div class="releases-details">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                </div>
+     <div  class="details1">
+        <div id="side-button2" class="btn-group dropstart">
+  <button id="ss" type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    <i id="dots" class="fa-solid fa-ellipsis"></i>
+  </button>
+  <ul class="dropdown-menu">
+    <!-- Dropdown menu links -->
+    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-play"></i> Play Now</a></li>
+    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-plus"></i>Add to Queue</a></li>
+    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-list"></i></i>Add to favourites</a></li>
+    <li><a class="dropdown-item" href="#"><i class="fa-sharp fa-solid fa-circle-info"></i> Get info</a></li>
+  </ul>
+</div>
+        
+         <span>Pathaan <br>
+         3-3-23</span>
+         
+
+         
+    </div>
+     </div>
+</div>
+</div>
+<!-- artists section starts-->
+<h4>Popular Artists</h4>
+<div id="singer-container">
+    <div class="singer-image-container">
+ <img src="sin1.jpg">
+ <div class="releases-details">
+                         <a href="single.html"><i class="fa-solid fa-play"></i></a>
+                    </div>
+ <p>Arijit Singh</p>
+</div>
+ <div class="singer-image-container">
+ <img src="sin2.jpg">
+ <div class="releases-details">
+                         <a href="single.html"><i class="fa-solid fa-play"></i></a>
+                    </div>
+ <p>AR Rahaman</p>
+</div>
+<div class="singer-image-container">
+ <img src="sin3.jpg">
+ <div class="releases-details">
+                         <a href="single.html"><i class="fa-solid fa-play"></i></a>
+                    </div>
+ <p>Lata Mangeshwar</p>
+</div>
+<div class="singer-image-container">
+ <img src="sin4.jpg">
+ <div class="releases-details">
+                         <a href="single.html"><i class="fa-solid fa-play"></i></a>
+                    </div>
+ <p>Asha Bhonsle</p>
+</div>
+<div class="singer-image-container">
+ <img src="sin5.jpg">
+ <div class="releases-details">
+                         <a href="single.html"><i class="fa-solid fa-play"></i></a>
+                    </div>
+ <p>Shreya Ghoshal</p>
+</div>
+<div class="singer-image-container">
+ <img src="sin6.jpg">
+ <div class="releases-details">
+                         <a href="single.html"><i class="fa-solid fa-play"></i></a>
+                    </div>
+ <p>Shankar Mahadavevan</p>
+</div>
+<!-- music radio lists section starts-->
+</div>
+<h4>Radio</h4>
+<div id="singer-container">
+<div class="singer-image-container">
+ <img src="radio.png">
+ <div class="releases-details">
+                         <a href="single.html"><i class="fa-solid fa-play"></i></a>
+                    </div>
+</div>
+    <div class="singer-image-container">
+ <img src="gen1.png">
+ <div class="releases-details">
+                         <a href="single.html"><i class="fa-solid fa-play"></i></a>
+                    </div>
+</div>
+ <div class="singer-image-container">
+ <img src="gen2.png">
+ <div class="releases-details">
+                         <a href="single.html"><i class="fa-solid fa-play"></i></a>
+                    </div>
+
+</div>
+<div class="singer-image-container">
+ <img src="gen3.png"> 
+ <div class="releases-details">
+                         <a href="single.html"><i class="fa-solid fa-play"></i></a>
+                    </div>
+</div>
+<div class="singer-image-container">
+ <img src="gen4.png">
+ <div class="releases-details">
+                         <a href="single.html"><i class="fa-solid fa-play"></i></a>
+                    </div>
+</div>
+</div>
+<!-- music type section starts-->
+<div id="type-container">
+<div class="type-image-container">
+ <img src="party.jpg">
+ <h5> Party</h5>
+</div>
+    <div class="type-image-container">
+ <img src="electronic.jpg">
+ <h5>Electronic</h5>
+</div>
+ <div class="type-image-container">
+ <img src="roadtrip.jpg">
+ <h5>Roadtrip</h5>
+</div>
+</div>
+<!-- new releases section-hindi starts-->
+<h4>Latest Hindi</h4>
+<div id="new-releases-container">
+    <div class="new-releases-image-container">
+        <img src="new1.png">
+     <h5>Album 1</h5>
+     <p>06-03-2023</p>
+    </div>
+
+    <div class="new-releases-image-container">
+        <img src="new2.png">
+        <h5>Album 2</h5>
+     <p>06-03-2023</p>
+    </div>
+    <div class="new-releases-image-container">
+        <img src="new3.png">
+        <h5>Album 3</h5>
+     <p>06-03-2023</p>
+    </div>
+
+    <div class="new-releases-image-container">
+        <img src="new4.png">
+        <h5>Album 4</h5>
+     <p>06-03-2023</p>
+    </div>
+    <div class="new-releases-image-container">
+ <img src="new2.png">
+ <h5>Album 5</h5>
+     <p>06-03-2023</p>
+</div>
+
+    <div class="new-releases-image-container">
+ <img src="new1.png">
+ <h5>Album 6</h5>
+     <p>06-03-2023</p>
+</div>
+</div>
+<!-- new releases section-bengali starts-->
+<h4>Latest Bengali</h4>
+<div id="new-releases-container">
+    <div class="new-releases-image-container">
+        <img src="new11.png">
+     <h5>Album 1</h5>
+     <p>06-03-2023</p>
+    </div>
+
+    <div class="new-releases-image-container">
+        <img src="new12.png">
+        <h5>Album 2</h5>
+     <p>06-03-2023</p>
+    </div>
+    <div class="new-releases-image-container">
+        <img src="new13.png">
+        <h5>Album 3</h5>
+     <p>06-03-2023</p>
+    </div>
+
+    <div class="new-releases-image-container">
+        <img src="new11.png">
+        <h5>Album 4</h5>
+     <p>06-03-2023</p>
+    </div>
+    <div class="new-releases-image-container">
+ <img src="new12.png">
+ <h5>Album 5</h5>
+     <p>06-03-2023</p>
+</div>
+
+    <div class="new-releases-image-container">
+ <img src="new13.png">
+ <h5>Album 6</h5>
+     <p>06-03-2023</p>
+</div>
+</div>
+
+
+</div>
+</main>
+<!-- aside music queue starts-->
+<aside>
+   <div id="side-bar">
+   	<div class="each-side-div">
+    
+    
+ 
+   
+ <!-- Default dropstart button -->
+   <h4>Queue</h4>
+<div id="side-button" class="btn-group dropstart">
+  <button id="ss" type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    Queue
+  </button>
+  <ul class="dropdown-menu">
+    <!-- Dropdown menu links -->
+    <li><a class="dropdown-item" href="#">playlists</a></li>
+    <li><a class="dropdown-item" href="#">Favourite Songs</a></li>
+    
+  </ul>
+</div>
+   </div>
+
+   	<div class="each-side-div">
+   	<p>01</p>
+   	<img src="s6.jpg">
+    <div class="playchange">
+                       <i class="fa-solid fa-play"></i>
+                    </div>
+   	<div class="side-para">
+   	<p>Bajirao-Mastani</p>
+   	<p>SLB</p>
+   </div>
+   	<i class="fa-regular fa-heart heart"></i>
+   	</div>
+   	<div class="each-side-div">
+   	<p>02</p>
+   	<img src="s4.jpg">
+    <div class="playchange">
+                       <i class="fa-solid fa-play"></i>
+                    </div>
+   	<div class="side-para">
+   	<p>Gehra-iyaan</p>
+   	<p>Vishal Sekhar</p>
+   </div>
+   	<i class="fa-regular fa-heart heart"></i>
+   	</div>
+   	<div class="each-side-div">
+   	<p>03</p>
+   	<img src="s9.jpg">
+    <div class="playchange">
+                       <i class="fa-solid fa-play"></i>
+                    </div>
+   	<div class="side-para">
+   	<p>Pathaan</p>
+   	<p>Vishal Sekhar</p>
+   </div>
+   	<i class="fa-regular fa-heart  heart"></i>
+   	</div>
+ 
+   	<div class="each-side-div">
+   	<p>04</p>
+   	<img src="s15.jpg">
+    <div class="playchange">
+                       <i class="fa-solid fa-play"></i>
+                    </div>
+   	<div class="side-para">
+   	<p>Om-Shanti-Om</p>
+   	<p>Vishal Sekhar</p>
+   </div>
+   	<i class="fa-regular fa-heart heart"></i>
+   	</div>
+    
+    <div class="each-side-div">
+    <p>05</p>
+    <img src="s6.jpg">
+    <div class="playchange">
+                       <i class="fa-solid fa-play"></i>
+                    </div>
+    <div class="side-para">
+    <p>Bajirao-Mastani</p>
+    <p>SLB</p>
+   </div>
+    <i class="fa-regular fa-heart heart"></i>
+    </div>
+    <div class="each-side-div">
+    <p>06</p>
+    <img src="s4.jpg">
+    <div class="playchange">
+                       <i class="fa-solid fa-play"></i>
+                    </div>
+    <div class="side-para">
+    <p>Gehrai-yaan</p>
+    <p>Vishal Sekhar</p>
+   </div>
+    <i class="fa-regular fa-heart heart "></i>
+    </div>
+    <div class="each-side-div">
+    <p>07</p>
+    <img src="s9.jpg">
+    <div class="playchange">
+                       <i class="fa-solid fa-play"></i>
+                    </div>
+    <div class="side-para">
+    <p>Pathaan</p>
+    <p>Vishal Sekhar</p>
+   </div>
+    <i class="fa-regular fa-heart heart "></i>
+    </div>
+ 
+    <div class="each-side-div">
+    <p>08</p>
+    <img src="s15.jpg">
+    <div class="playchange">
+                       <i class="fa-solid fa-play"></i>
+                    </div>
+    <div class="side-para">
+    <p>Om-Shanti-Om</p>
+    <p>Vishal Sekhar</p>
+   </div>
+    <i class="fa-regular fa-heart heart"></i>
+    </div>
+
+    <div class="each-side-div">
+    <p>09</p>
+    <img src="s6.jpg">
+    <div class="playchange">
+                       <i class="fa-solid fa-play"></i>
+                    </div>
+    <div class="side-para">
+    <p>Bajirao-Mastani</p>
+    <p>SLB</p>
+   </div>
+    <i class="fa-regular fa-heart heart"></i>
+    </div>
+    <div class="each-side-div">
+    <p>10</p>
+    <img src="s4.jpg">
+    <div class="playchange">
+                       <i class="fa-solid fa-play"></i>
+                    </div>
+    <div class="side-para">
+    <p>Gehrai-yaan</p>
+    <p>Vishal Sekhar</p>
+   </div>
+    <i class="fa-regular fa-heart heart "></i>
+    </div>
+    <div class="each-side-div">
+    <p>11</p>
+    <img src="s9.jpg">
+    <div class="playchange">
+                       <i class="fa-solid fa-play"></i>
+                    </div>
+    <div class="side-para">
+    <p>Pathaan</p>
+    <p>Vishal Sekhar</p>
+   </div>
+    <i class="fa-regular fa-heart  heart"></i>
+    </div>
+ 
+    <div class="each-side-div">
+    <p>12</p>
+    <img src="s15.jpg">
+    <div class="playchange">
+                       <i class="fa-solid fa-play"></i>
+                    </div>
+    <div class="side-para">
+    <p>Om-Shanti-Om</p>
+    <p>Vishal Sekhar</p>
+   </div>
+    <i class="fa-regular fa-heart heart"></i>
+    </div>
+
+    <div class="each-side-div">
+    <p>13</p>
+    <img src="s6.jpg">
+    <div class="playchange">
+                       <i class="fa-solid fa-play"></i>
+                    </div>
+    <div class="side-para">
+    <p>Bajirao-Mastani</p>
+    <p>SLB</p>
+   </div>
+    <i class="fa-regular fa-heart heart"></i>
+    </div>
+    <div class="each-side-div">
+    <p>14</p>
+    <img src="s4.jpg">
+    <div class="playchange">
+                       <i class="fa-solid fa-play"></i>
+                    </div>
+    <div class="side-para">
+    <p>Gehrai-yaan</p>
+    <p>Vishal Sekhar</p>
+   </div>
+    <i class="fa-regular fa-heart  heart"></i>
+    </div>
+    <div class="each-side-div">
+    <p>15</p>
+    <img src="s9.jpg">
+    <div class="playchange">
+                       <i class="fa-solid fa-play"></i>
+                    </div>
+    <div class="side-para">
+    <p>Pathaan</p>
+    <p>Vishal Sekhar</p>
+   </div>
+    <i class="fa-regular fa-heart heart "></i>
+    </div>
+ 
+    <div class="each-side-div">
+    <p>16</p>
+    <img src="s15.jpg">
+    <div class="playchange">
+                       <i class="fa-solid fa-play"></i>
+                    </div>
+    <div class="side-para">
+    <p>Om-Shanti-Om</p>
+    <p>Vishal Sekhar</p>
+   </div>
+    <i class="fa-regular fa-heart heart"></i>
+    </div>
+     <div class="each-side-div">
+    <p>17</p>
+    <img src="s6.jpg">
+    <div class="playchange">
+                       <i class="fa-solid fa-play"></i>
+                    </div>
+    <div class="side-para">
+    <p>Bajirao-Mastani</p>
+    <p>SLB</p>
+   </div>
+    <i class="fa-regular fa-heart heart"></i>
+    </div>
+    <div class="each-side-div">
+    <p>18</p>
+    <img src="s4.jpg">
+    <div class="playchange">
+                       <i class="fa-solid fa-play"></i>
+                    </div>
+    <div class="side-para">
+    <p>Gehrai-yaan</p>
+    <p>Vishal Sekhar</p>
+   </div>
+    <i class="fa-regular fa-heart  heart"></i>
+    </div>
+    <div class="each-side-div">
+    <p>19</p>
+    <img src="s9.jpg">
+    <div class="playchange">
+                       <i class="fa-solid fa-play"></i>
+                    </div>
+    <div class="side-para">
+    <p>Pathaan</p>
+    <p>Vishal Sekhar</p>
+   </div>
+    <i class="fa-regular fa-heart  heart"></i>
+    </div>
+
+
+</aside>
+<!-- music player footer starts-->
+<footer>
+            <!-- Song Thumnail, Title, Singer -->
+            <div id="footer-song-info">
+                <div id="footer-song-image"><img src="new2 (1).png"></div>
+                <div id="footer-song-name">
+                    <span style="color:white">Besharam Rang</span>
+                    <p class="subtitle" style="color:white">Shilpa Rao</p>
+                </div>
+                <div>
+                    <span class="nav-link">
+                        <i class="far fa-heart subtitle"></i>
+                    </span>
+                    <span class="nav-link">
+                        <i class="fas fa-ban subtitle"></i>
+                    </span>
+                </div>
+            </div>
+            
+.              
+               
+<audio controls  id="playmusic" class="audiplay" style="width: 700px;">
+ <source src="besharamrang.mp3" type="audio/mp3">
+</audio>
+
+
+           
+            <div class="player-extras">
+                <div>
+                    <i class="fas fa-list-ul" style="color:white;"></i>
+                </div>
+                <div>
+                    <i class="fas fa-laptop" style="color:white;"></i>
+                </div>
+
+                
+                <div><i class="fas fa-expand" style="color:white;"></i></div>
+            </div>
+
+        </footer>
+    </div>
+
+    </div>
+
+</body>
+
+<script src="script.js"></script>
+
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
